@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+       .box1{ width: 100px;
+            height: 100px;
+            margin-bottom:10px;
+            background-color: steelblue;
+            animation: rotate 1s infinite;
+            
+       }
+       @keyframes rotate{
+        from{
+            transform:rotate(0deg);
+        }
+        to{
+            transform:rotate(360deg);
+        }
+       }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin-bottom:10px;
+            background-color: steelblue;
+            animation-name:growBox;
+            animation-duration:3s;
+            animation-iteration-count:infinite;
+        }
+         @keyframes growBox {
+            0% {
+                height:0px;
+                width:0px;
+                /* transform: translateY(0); */
+                background-color: blue;
+            }
+            50%{
+                 height:100px;
+                width:100px;
+                /* transform: translateY(0); */
+                background-color: green;
+            }
+           
+            100% {
+                /* transform: translateY(300px); */
+                background-color:yellow;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

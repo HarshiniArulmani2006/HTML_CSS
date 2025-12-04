@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartbeat Animation</title>
+
+    <style>
+        .emoji {
+            font-size: 60px;
+
+            animation-name: heartbeat;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes heartbeat {
+            0%   { 
+                font-size: 60px;
+             }
+            30%  {
+                 font-size: 80px;
+                 }
+            50% 
+             { font-size: 60px;
+             }
+            70%  { 
+                font-size: 80px;
+             }
+            100% { 
+                font-size: 60px;
+             }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="emoji">❤️</div>
+</body>
+</html>
